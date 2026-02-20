@@ -23,6 +23,12 @@ public class EquipamentoService : IEquipamentoService
         if (!Enum.TryParse<StatusOperacional>(dto.StatusOperacional, true, out var status))
             throw new ArgumentException("StatusOperacional inválido");
 
+        if (await _context.Equipamentos.AnyAsync(e => e.Codigo == dto.Codigo))
+            throw new ArgumentException("Já existe um equipamento com esse código.");
+
+        if (dto.Horimetro < 0)
+            throw new ArgumentException("Horímetro não pode ser negativo.");
+
         var equipamento = new Equipamento(
             dto.Codigo,
             tipo,
