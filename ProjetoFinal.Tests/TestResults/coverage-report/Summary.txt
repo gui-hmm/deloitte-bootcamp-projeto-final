@@ -1,0 +1,32 @@
+Summary
+  Generated on: 20/02/2026 - 14:39:50
+  Coverage date: 20/02/2026 - 14:38:20
+  Parser: Cobertura
+  Assemblies: 1
+  Classes: 10
+  Files: 9
+  Line coverage: 29.8%
+  Covered lines: 166
+  Uncovered lines: 391
+  Coverable lines: 557
+  Total lines: 927
+  Branch coverage: 10.4% (24 of 230)
+  Covered branches: 24
+  Total branches: 230
+  Method coverage: 62.8% (44 of 70)
+  Full method coverage: 62.8% (44 of 70)
+  Covered methods: 44
+  Fully covered methods: 44
+  Total methods: 70
+
+projeto-final                                       29.8%
+  Microsoft.AspNetCore.OpenApi.Generated               0%
+  Program                                              0%
+  ProjetoFinal.Controllers.EquipamentosController    100%
+  ProjetoFinal.Data.AppDbContext                     100%
+  ProjetoFinal.Domain.Models.Equipamento            96.7%
+  ProjetoFinal.DTOs.EquipamentoCreateDto             100%
+  ProjetoFinal.DTOs.EquipamentoResponseDto           100%
+  ProjetoFinal.DTOs.EquipamentoUpdateDto             100%
+  ProjetoFinal.Services.EquipamentoService           100%
+  System.Runtime.CompilerServices                      0%
