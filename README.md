@@ -125,6 +125,22 @@ VALUES
 SELECT * FROM public.equipamentos ORDER BY id;
 
 ```
+------------------------------------------------------------------------
+
+# Rodando a API
+
+``` bash
+dotnet clean
+dotnet run
+```
+
+API:
+
+http://localhost:5004
+
+Swagger:
+
+http://localhost:5004/swagger
 
 ------------------------------------------------------------------------
 # Como realizar os testes no Postman/Insomnia
@@ -180,72 +196,6 @@ PUT http://localhost:5004/api/projFinal/{id}
 ``` bash
 DELETE http://localhost:5004/api/projFinal/{id}
 ```
-------------------------------------------------------------------------
-
-# SQL para DBeaver
-
-``` sql
--- Schema padrão
-CREATE SCHEMA IF NOT EXISTS public;
-
--- Remove tabela antiga se existir
-DROP TABLE IF EXISTS public.equipamentos CASCADE;
-
-CREATE TABLE public.equipamentos (
-    id                   SERIAL PRIMARY KEY,
-    codigo               VARCHAR(50) NOT NULL,
-    tipo                 VARCHAR(50) NOT NULL,
-    modelo               VARCHAR(100) NOT NULL,
-    horimetro            NUMERIC(18,2) NOT NULL DEFAULT 0,
-    status_operacional   VARCHAR(50) NOT NULL,
-    data_aquisicao       DATE,
-    localizacao_atual    VARCHAR(200)
-);
-
--- Índice único para Codigo
-CREATE UNIQUE INDEX ux_equipamentos_codigo
-    ON public.equipamentos (codigo);
-
--- Constraints adicionais
-ALTER TABLE public.equipamentos
-    ADD CONSTRAINT chk_horimetro_nao_negativo CHECK (horimetro >= 0),
-    ADD CONSTRAINT chk_tipo_valido CHECK (
-        tipo IN ('Caminhao', 'Escavadeira', 'Perfuratriz', 'Carregadeira', 'Trator')
-    ),
-    ADD CONSTRAINT chk_status_valido CHECK (
-        status_operacional IN ('Operacional', 'EmManutencao', 'Parado')
-    );
-
--- Dados de exemplo
-INSERT INTO public.equipamentos
-(codigo, tipo, modelo, horimetro, status_operacional, data_aquisicao, localizacao_atual)
-VALUES
-('CAT-793F-000123', 'Caminhao', 'Caterpillar 793F', 18234.50, 'Operacional', '2019-03-15', 'Mina Carajás N4E'),
-('EXC-320D-000045', 'Escavadeira', 'Caterpillar 320D', 12500.75, 'EmManutencao', '2020-06-20', 'Oficina Central'),
-('PER-ROC-000078', 'Perfuratriz', 'Sandvik DR410', 9800.20, 'Parado', '2018-11-10', 'Mina S11D');
-
--- Consulta rápida
-SELECT * FROM public.equipamentos ORDER BY id;
-
-```
-
-------------------------------------------------------------------------
-
-
-# Rodando a API
-
-``` bash
-dotnet clean
-dotnet run
-```
-
-API:
-
-http://localhost:5004
-
-Swagger:
-
-http://localhost:5004/swagger
 
 ------------------------------------------------------------------------
 
