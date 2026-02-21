@@ -458,3 +458,4 @@ C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\ProjetoFinal.Tests\
 C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\ProjetoFinal.Tests\obj\Debug\net10.0\ProjetoFinal.Tests.pdb
 C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\ProjetoFinal.Tests\obj\Debug\net10.0\ProjetoFinal.Tests.genruntimeconfig.cache
 C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\ProjetoFinal.Tests\obj\Debug\net10.0\ref\ProjetoFinal.Tests.dll
+C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\ProjetoFinal.Tests\obj\Debug\net10.0\ProjetoFinal.Tests.sourcelink.json

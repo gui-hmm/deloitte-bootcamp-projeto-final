@@ -29,6 +29,8 @@ industriais.
     │       └── StatusOperacional.cs
     │
     ├── DTOs
+    │   ├──Common
+    │   │  └── PagedResponse.cs
     │   ├── EquipamentoCreateDto.cs
     │   ├── EquipamentoUpdateDto.cs
     │   └── EquipamentoResponseDto.cs

@@ -221,7 +221,7 @@ var assemblies = [
       { "name": "ProjetoFinal.DTOs.EquipamentoCreateDto", "rp": "projeto_final_EquipamentoCreateDto.html", "cl": 7, "ucl": 0, "cal": 7, "tl": 12, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "ProjetoFinal.DTOs.EquipamentoResponseDto", "rp": "projeto_final_EquipamentoResponseDto.html", "cl": 8, "ucl": 0, "cal": 8, "tl": 13, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "ProjetoFinal.DTOs.EquipamentoUpdateDto", "rp": "projeto_final_EquipamentoUpdateDto.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 8, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "ProjetoFinal.Services.EquipamentoService", "rp": "projeto_final_EquipamentoService.html", "cl": 69, "ucl": 0, "cal": 69, "tl": 113, "cb": 18, "tb": 18, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "ProjetoFinal.Services.EquipamentoService", "rp": "projeto_final_EquipamentoService.html", "cl": 71, "ucl": 2, "cal": 73, "tl": 119, "cb": 20, "tb": 22, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "System.Runtime.CompilerServices", "rp": "projeto_final_CompilerServices.html", "cl": 0, "ucl": 3, "cal": 3, "tl": 23, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
 ];

@@ -3,6 +3,7 @@ using ProjetoFinal.Data;
 using ProjetoFinal.Domain.Models;
 using ProjetoFinal.Domain.Enums;
 using ProjetoFinal.DTOs;
+using ProjetoFinal.DTOs.Common;
 
 namespace ProjetoFinal.Services;
 
@@ -45,7 +46,7 @@ public class EquipamentoService : IEquipamentoService
         return MapToResponse(equipamento);
     }
 
-    public async Task<IEnumerable<EquipamentoResponseDto>> ListarAsync(
+    public async Task<PagedResponse<EquipamentoResponseDto>> ListarAsync(
         string? tipo,
         string? status,
         string? codigo,
@@ -63,15 +64,22 @@ public class EquipamentoService : IEquipamentoService
         if (!string.IsNullOrWhiteSpace(codigo))
             query = query.Where(e => e.Codigo.Contains(codigo));
 
-        query = query
+        var totalRecords = await query.CountAsync();
+
+        var equipamentos = await query
             .Skip((page - 1) * pageSize)
-            .Take(pageSize);
+            .Take(pageSize)
+            .ToListAsync();
 
-        var equipamentos = await query.ToListAsync();
+        var response = equipamentos.Select(MapToResponse);
 
-        return equipamentos.Select(MapToResponse);
+        return new PagedResponse<EquipamentoResponseDto>(
+            response,
+            page,
+            pageSize,
+            totalRecords
+        );
     }
-
     public async Task<EquipamentoResponseDto?> ObterPorIdAsync(int id)
     {
         var equipamento = await _context.Equipamentos.FindAsync(id);
