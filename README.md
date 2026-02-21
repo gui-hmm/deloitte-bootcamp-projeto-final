@@ -156,19 +156,19 @@ http://localhost:5004/swagger
 ## buscar equipamentos
 
 ``` bash
-GET http://localhost:5004/api/projFinal
+GET http://localhost:5004/api/v1/Equipamentos
 ```
 
 ## buscar equipamentos por ID
 
 ``` bash
-GET http://localhost:5004/api/projFinal/{id}
+GET http://localhost:5004/api/v1/Equipamentos/{id}
 ```
 
 ## buscar equipamentos
 
 ``` bash
-POST http://localhost:5004/api/projFinal
+POST http://localhost:5004/api/v1/Equipamentos
 ```
 ### Exemplo de JSON
 
@@ -187,7 +187,7 @@ POST http://localhost:5004/api/projFinal
 ## editar equipamento
 
 ``` bash
-PUT http://localhost:5004/api/projFinal/{id}
+PUT http://localhost:5004/api/v1/Equipamentos/{id}
 ```
 ### Exemplo de JSON
 
@@ -202,7 +202,7 @@ PUT http://localhost:5004/api/projFinal/{id}
 ## apagar equipamento
 
 ``` bash
-DELETE http://localhost:5004/api/projFinal/{id}
+DELETE http://localhost:5004/api/v1/Equipamentos/{id}
 ```
 
 ------------------------------------------------------------------------

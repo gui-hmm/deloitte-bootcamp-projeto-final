@@ -5,7 +5,7 @@ using ProjetoFinal.Services;
 namespace ProjetoFinal.Controllers;
 
 [ApiController]
-[Route("api/projFinal")]
+[Route("api/v1/[controller]")]
 public class EquipamentosController : ControllerBase
 {
     private readonly IEquipamentoService _service;
