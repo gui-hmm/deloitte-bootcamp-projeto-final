@@ -35,6 +35,9 @@ industriais.
     │   ├── EquipamentoUpdateDto.cs
     │   └── EquipamentoResponseDto.cs
     │
+    ├── Middleware
+    │   └── ExceptionMiddleware.cs
+    │
     ├── Services
     │   ├── IEquipamentoService.cs
     │   └── EquipamentoService.cs
