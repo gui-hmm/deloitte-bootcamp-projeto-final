@@ -6,6 +6,9 @@ C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\projeto-final\bin\D
 C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\projeto-final\bin\Debug\net10.0\projeto-final.runtimeconfig.json
 C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\projeto-final\bin\Debug\net10.0\projeto-final.dll
 C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\projeto-final\bin\Debug\net10.0\projeto-final.pdb
+C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\projeto-final\bin\Debug\net10.0\FluentValidation.dll
+C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\projeto-final\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\projeto-final\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\projeto-final\bin\Debug\net10.0\Humanizer.dll
 C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\projeto-final\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\henri\Desktop\programacao\bootcamp_dtt_dotnet_final\projeto-final\bin\Debug\net10.0\Microsoft.Build.Framework.dll

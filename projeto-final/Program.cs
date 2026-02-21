@@ -2,10 +2,15 @@ using Microsoft.EntityFrameworkCore;
 using ProjetoFinal.Data;
 using ProjetoFinal.Services;
 using ProjetoFinal.Middleware;
+using ProjetoFinal.Validators;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+builder.Services
+    .AddControllers()
+    .AddFluentValidation(fv =>
+        fv.RegisterValidatorsFromAssemblyContaining<EquipamentoCreateDtoValidator>());
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));

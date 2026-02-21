@@ -21,6 +21,9 @@ industriais.
     ├── Controllers
     │   └── EquipamentosController.cs
     │
+    ├── Data
+    │   └── AppDbContext.cs
+    │
     ├── Domain
     │   ├── Models
     │   │   └── Equipamento.cs
@@ -42,8 +45,8 @@ industriais.
     │   ├── IEquipamentoService.cs
     │   └── EquipamentoService.cs
     │
-    ├── Data
-    │   └── AppDbContext.cs
+    ├── Validators
+    │   └── EquipamentoDtoValidator.cs
     │
     ├── docker-compose.yml
     ├── Program.cs
